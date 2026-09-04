@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – Shonga Farms LTD</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ===== SAME STYLES AS INDEX (keep consistency) ===== */
+        :root {
+            --green-dark: #1e4f2b;
+            --green-primary: #2e7d32;
+            --green-medium: #43a047;
+            --green-light: #66bb6a;
+            --green-pale: #e8f5e9;
+            --brown-dark: #3e2723;
+            --brown-primary: #5d4037;
+            --brown-medium: #795548;
+            --brown-light: #a1887f;
+            --cream: #f7f3e9;
+            --white: #ffffff;
+            --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 8px 40px rgba(0, 0, 0, 0.10);
+            --shadow-hover: 0 16px 56px rgba(0, 0, 0, 0.14);
+            --radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: #2d2d2d;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 700; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; height: auto; display: block; }
+        .section-padding { padding: 90px 0; }
+        .section-title {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: var(--green-dark);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+        .section-title span { color: var(--brown-primary); }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #5a5a5a;
+            max-width: 640px;
+            margin: 0 auto 2.5rem auto;
+            font-weight: 400;
+        }
+        .divider-line {
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--green-primary), var(--brown-medium));
+            border-radius: 4px;
+            margin: 0.5rem auto 1.2rem auto;
+        }
+
+        .btn-primary-custom {
+            background: var(--green-primary);
+            color: #fff;
+            padding: 12px 34px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--green-primary);
+            transition: var(--transition);
+            display: inline-block;
+            letter-spacing: 0.3px;
+        }
+        .btn-primary-custom:hover {
+            background: var(--green-dark);
+            border-color: var(--green-dark);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(46, 125, 50, 0.30);
+        }
+        .btn-outline-custom {
+            background: transparent;
+            color: var(--green-primary);
+            padding: 12px 34px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--green-primary);
+            transition: var(--transition);
+            display: inline-block;
+        }
+        .btn-outline-custom:hover {
+            background: var(--green-primary);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(46, 125, 50, 0.25);
+        }
+        .btn-brown {
+            background: var(--brown-primary);
+            color: #fff;
+            padding: 12px 34px;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid var(--brown-primary);
+            transition: var(--transition);
+            display: inline-block;
+        }
+        .btn-brown:hover {
+            background: var(--brown-dark);
+            border-color: var(--brown-dark);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(62, 39, 35, 0.30);
+        }
+
+        /* ---- NAVBAR (copy from index) ---- */
+        .navbar-custom {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 28px rgba(0,0,0,0.06);
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(46,125,50,0.10);
+        }
+        .navbar-custom .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: var(--green-dark);
+            letter-spacing: -0.5px;
+        }
+        .navbar-custom .navbar-brand img {
+            height: 48px;
+            width: auto;
+            border-radius: 10px;
+        }
+        .navbar-custom .navbar-brand span { color: var(--brown-primary); }
+        .navbar-custom .nav-link {
+            font-weight: 500;
+            color: #333;
+            padding: 8px 18px !important;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link.active {
+            color: var(--green-primary);
+            background: var(--green-pale);
+        }
+        .navbar-custom .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2.5px;
+            background: var(--green-primary);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .navbar-custom .nav-link:hover::after,
+        .navbar-custom .nav-link.active::after {
+            width: 60%;
+        }
+        .navbar-toggler { border: none; padding: 6px 10px; font-size: 1.3rem; color: var(--green-dark); }
+        .navbar-toggler:focus { box-shadow: none; }
+
+        /* ---- PAGE HERO (about) ---- */
+        .page-hero {
+            position: relative;
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(30,79,43,0.85), rgba(62,39,35,0.75)),
+                url('static/background(3).jfif') center/cover no-repeat;
+            padding: 160px 0 80px;
+            margin-top: 0;
+        }
+        .page-hero h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+        .page-hero h1 span { color: #b8e0a8; }
+        .page-hero p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.2rem;
+            max-width: 560px;
+        }
+
+        /* ---- about story ---- */
+        .story-section {
+            background: var(--white);
+        }
+        .story-image-wrap {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        .story-image-wrap img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .story-image-wrap:hover img { transform: scale(1.02); }
+
+        /* ---- mission & vision ---- */
+        .mission-card {
+            background: var(--cream);
+            border-radius: var(--radius);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+            border-top: 5px solid var(--green-primary);
+            transition: var(--transition);
+        }
+        .mission-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-6px);
+        }
+        .mission-card i {
+            font-size: 2.8rem;
+            color: var(--green-primary);
+            margin-bottom: 1.2rem;
+        }
+        .mission-card h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--green-dark);
+        }
+        .mission-card p { color: #444; }
+
+        /* ---- timeline ---- */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--green-light);
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.2rem;
+            padding-left: 20px;
+        }
+        .timeline-item:last-child { padding-bottom: 0; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 6px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--green-primary);
+            border: 3px solid var(--cream);
+            box-shadow: 0 0 0 3px var(--green-light);
+        }
+        .timeline-item .year {
+            font-weight: 700;
+            color: var(--green-primary);
+            font-size: 1.2rem;
+        }
+        .timeline-item p { margin-bottom: 0; color: #444; }
+
+        /* ---- team ---- */
+        .team-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-align: center;
+            height: 100%;
+        }
+        .team-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-6px);
+        }
+        .team-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .team-card .team-body {
+            padding: 1.5rem 1rem;
+        }
+        .team-card .team-body h5 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--green-dark);
+            margin-bottom: 0.2rem;
+        }
+        .team-card .team-body .role {
+            color: var(--brown-medium);
+            font-size: 0.9rem;
+        }
+
+        /* ---- footer (same) ---- */
+        .footer {
+            background: var(--green-dark);
+            color: rgba(255,255,255,0.85);
+            padding: 50px 0 20px 0;
+            border-top: 4px solid var(--brown-medium);
+        }
+        .footer h5 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        .footer .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+        }
+        .footer .footer-brand img { height: 44px; border-radius: 10px; }
+        .footer .footer-brand span {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .footer p { font-size: 0.95rem; opacity: 0.8; }
+        .footer .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            margin-right: 8px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer .social-links a:hover {
+            background: var(--green-light);
+            color: var(--green-dark);
+            transform: translateY(-3px);
+            border-color: var(--green-light);
+        }
+        .footer .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .footer-links li { margin-bottom: 10px; }
+        .footer .footer-links a {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer .footer-links a:hover {
+            color: #fff;
+            transform: translateX(4px);
+        }
+        .footer .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        /* ---- responsive tweaks ---- */
+        @media (max-width: 991.98px) {
+            .page-hero h1 { font-size: 2.8rem; }
+            .section-title { font-size: 2.2rem; }
+            .story-image-wrap img { height: 280px; }
+        }
+        @media (max-width: 767.98px) {
+            .page-hero { min-height: 40vh; padding: 130px 0 60px; }
+            .page-hero h1 { font-size: 2.2rem; }
+            .section-title { font-size: 1.9rem; }
+            .timeline { padding-left: 20px; }
+            .timeline-item::before { left: -22px; width: 14px; height: 14px; }
+        }
+        @media (max-width: 575.98px) {
+            .page-hero h1 { font-size: 1.9rem; }
+            .team-card img { height: 200px; }
+        }
+        .text-green { color: var(--green-primary); }
+        .text-brown { color: var(--brown-primary); }
+        .bg-cream { background-color: var(--cream); }
+        .bg-green-dark { background-color: var(--green-dark); }
+        .rounded-custom { border-radius: var(--radius); }
+        .shadow-custom { box-shadow: var(--shadow-sm); }
+    </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- NAVBAR -->
+<!-- ============================================================ -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="static/images/logo1 (2).png" alt="Shonga Farms Logo" />
+            Shonga <span>Farms</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+                <a class="btn btn-primary-custom btn-sm" href="contact.html" style="padding:8px 24px;font-size:0.9rem;">
+                    <i class="fas fa-phone-alt me-1"></i> Get in Touch
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- PAGE HERO -->
+<!-- ============================================================ -->
+<section class="page-hero" id="about-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Our <span>Story</span></h1>
+                <p>
+                    For over a decade, Shonga Farms LTD has been rooted in the rich
+                    soils of Kwara State, cultivating quality and community.
+                </p>
+                <a href="#story" class="btn btn-primary-custom mt-3">
+                    <i class="fas fa-arrow-down me-1"></i> Discover More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- STORY SECTION -->
+<!-- ============================================================ -->
+<section class="story-section section-padding" id="story">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="story-image-wrap">
+                    <img src="static/images/Crop farmers_.jfif" alt="Shonga Farms fields" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <span class="badge bg-green-dark text-white px-3 py-2 rounded-pill mb-2" style="font-weight:500;font-size:0.8rem;">
+                    <i class="fas fa-history me-1"></i> Our Journey
+                </span>
+                <h2 class="section-title" style="font-size:2.4rem;">
+                    From <span>2015</span> to Today
+                </h2>
+                <div class="divider-line" style="margin-left:0;margin-right:0;"></div>
+                <p>
+                    Shonga Farms LTD was born out of a passion for sustainable agriculture
+                    and a vision to create a farm that not only produces food but also
+                    nurtures the land and the people who work on it.
+                </p>
+                <p>
+                    What started as a small family-run operation has grown into a
+                    thriving mixed farm, integrating crop production, livestock rearing,
+                    and the supply of fresh animal products like eggs and milk.
+                </p>
+                <p>
+                    Today, we remain deeply connected to our roots in <strong>Shonga</strong>,
+                    serving local communities and beyond with wholesome, ethically
+                    produced food.
+                </p>
+                <a href="#mission" class="btn-brown mt-2">
+                    Our Mission <i class="fas fa-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MISSION & VISION -->
+<!-- ============================================================ -->
+<section class="section-padding bg-cream" id="mission">
+    <div class="container">
+        <div class="text-center">
+            <span class="badge bg-brown text-white px-3 py-2 rounded-pill mb-2" style="font-weight:500;font-size:0.8rem;">
+                <i class="fas fa-bullseye me-1"></i> Core Purpose
+            </span>
+            <h2 class="section-title">Mission &amp; <span>Vision</span></h2>
+            <div class="divider-line"></div>
+            <p class="section-subtitle">
+                Guided by our commitment to quality, sustainability, and community.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="mission-card">
+                    <i class="fas fa-flag-checkered"></i>
+                    <h4>Our Mission</h4>
+                    <p>
+                        To produce high-quality crops, livestock, and animal products
+                        using sustainable farming practices that protect the environment,
+                        support local economies, and nourish families with healthy,
+                        natural food.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mission-card">
+                    <i class="fas fa-eye"></i>
+                    <h4>Our Vision</h4>
+                    <p>
+                        To be a leading model of integrated, sustainable agriculture in
+                        West Africa, inspiring a new generation of farmers and building
+                        a future where farming and nature thrive together.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- HISTORY TIMELINE -->
+<!-- ============================================================ -->
+<section class="section-padding" style="background:var(--white);" id="history">
+    <div class="container">
+        <div class="text-center">
+            <span class="badge bg-green-dark text-white px-3 py-2 rounded-pill mb-2" style="font-weight:500;font-size:0.8rem;">
+                <i class="fas fa-clock me-1"></i> Milestones
+            </span>
+            <h2 class="section-title">Our <span>Timeline</span></h2>
+            <div class="divider-line"></div>
+            <p class="section-subtitle">
+                Key moments that shaped Shonga Farms LTD into what it is today.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">2015</div>
+                        <p><strong>Foundation</strong> – James Audu establishes Shonga Farms LTD on a small plot in Shonga, Kwara State, with a handful of livestock and a vision for sustainable farming.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2017</div>
+                        <p><strong>Expansion</strong> – The farm expands to 50 acres, introducing crop production and building the first poultry houses for free-range chickens.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2019</div>
+                        <p><strong>Diversification</strong> – Added goats and dairy cattle, launching fresh milk and egg production for local markets.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2022</div>
+                        <p><strong>Community Impact</strong> – Established a cooperative program, supporting over 30 smallholder farmers with training and resources.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2025</div>
+                        <p><strong>10th Anniversary</strong> – Celebrated a decade of growth, now operating on over 120 acres, with a full range of farm products and a loyal customer base.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- TEAM SECTION -->
+<!-- ============================================================ -->
+<section class="section-padding bg-cream" id="team">
+    <div class="container">
+        <div class="text-center">
+            <span class="badge bg-brown text-white px-3 py-2 rounded-pill mb-2" style="font-weight:500;font-size:0.8rem;">
+                <i class="fas fa-users me-1"></i> The People
+            </span>
+            <h2 class="section-title">Meet Our <span>Team</span></h2>
+            <div class="divider-line"></div>
+            <p class="section-subtitle">
+                Dedicated individuals who make Shonga Farms a success every day.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- CEO -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="static/images/ceo1.jfif" alt="James Audu" />
+                    <div class="team-body">
+                        <h5>James Audu</h5>
+                        <div class="role">Founder &amp; CEO</div>
+                        <p class="mt-2" style="font-size:0.9rem;color:#555;">
+                            Visionary leader with over 15 years of experience in agriculture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Farmer 1 -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="static/images/farmers.jfif" alt="Farm team" />
+                    <div class="team-body">
+                        <h5>Our Farmers</h5>
+                        <div class="role">Crop &amp; Livestock Specialists</div>
+                        <p class="mt-2" style="font-size:0.9rem;color:#555;">
+                            A passionate team that tends to our fields and animals with care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Worker -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="static/images/worker.jfif" alt="Farm worker" />
+                    <div class="team-body">
+                        <h5>Abdul &amp; Team</h5>
+                        <div class="role">Operations &amp; Logistics</div>
+                        <p class="mt-2" style="font-size:0.9rem;color:#555;">
+                            Ensuring smooth daily operations and product delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cooperation -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="static/images/cooperation.jfif" alt="Community cooperation" />
+                    <div class="team-body">
+                        <h5>Community Partners</h5>
+                        <div class="role">Cooperative &amp; Outreach</div>
+                        <p class="mt-2" style="font-size:0.9rem;color:#555;">
+                            Working with local farmers to grow together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CALL TO ACTION (optional) -->
+<!-- ============================================================ -->
+<section class="section-padding" style="background: var(--green-dark); color: #fff;">
+    <div class="container text-center">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; font-size:2.4rem;">
+            Join Us on Our Journey
+        </h2>
+        <p style="font-size:1.1rem; opacity:0.9; max-width:560px; margin:0.5rem auto 1.8rem;">
+            Whether you're a customer, partner, or aspiring farmer – we'd love to connect.
+        </p>
+        <a href="contact.html" class="btn btn-light btn-lg" style="border-radius:50px; padding:12px 44px; font-weight:600; color:var(--green-dark);">
+            <i class="fas fa-handshake me-2"></i> Get in Touch
+        </a>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER (same as index) -->
+<!-- ============================================================ -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="footer-brand">
+                    <img src="static/images/logo1 (2).png" alt="Shonga Farms" />
+                    <span>Shonga <span style="color:#a5d6a7;">Farms</span></span>
+                </div>
+                <p>
+                    Shonga Farms LTD is a mixed farm in Shonga, Kwara State,
+                    offering premium crops, livestock, and fresh animal products
+                    since 2015.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> Services</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h5>Contact Info</h5>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone-alt me-2" style="color:#a5d6a7;"></i> <a href="tel:08032007954">0803 200 7954</a></li>
+                    <li><i class="fas fa-envelope me-2" style="color:#a5d6a7;"></i> <a href="mailto:jamesaudu@gmail.com">jamesaudu@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt me-2" style="color:#a5d6a7;"></i> Shonga, Kwara State</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <h5>Social Handles</h5>
+                <ul class="footer-links">
+                    <li><i class="fab fa-tiktok me-2" style="color:#a5d6a7;"></i> @ShongaFarms</li>
+                    <li><i class="fab fa-whatsapp me-2" style="color:#a5d6a7;"></i> 08032007954</li>
+                    <li><i class="fab fa-facebook-f me-2" style="color:#a5d6a7;"></i> Shonga Farms LTD</li>
+                    <li><i class="fab fa-youtube me-2" style="color:#a5d6a7;"></i> Shonga Farms</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2015 – 2026 <strong>Shonga Farms LTD</strong>. All rights reserved.
+            <span class="d-block d-md-inline"> | Designed with <i class="fas fa-heart" style="color:#ef9a9a;"></i> in Nigeria</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================================================ -->
+<!-- BOOTSTRAP JS -->
+<!-- ============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- ============================================================ -->
+<!-- CUSTOM JS (same as index, adapted) -->
+<!-- ============================================================ -->
+<script>
+    (function() {
+        'use strict';
+
+        // ---------- NAVBAR ACTIVE LINK (scroll spy) ----------
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        function updateActiveLink() {
+            let current = '';
+            const scrollY = window.scrollY + 120;
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                if (scrollY >= top && scrollY < top + height) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+
+        // ---------- SMOOTH SCROLL FOR NAV LINKS (same-page) ----------
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const top = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ---------- NAVBAR COLLAPSE ON LINK CLICK (mobile) ----------
+        const navCollapse = document.getElementById('navMenu');
+        if (navCollapse) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992 && bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        }
+
+        // ---------- SET ACTIVE ON PAGE LOAD (based on URL) ----------
+        const currentPath = window.location.pathname.split('/').pop() || 'about.html';
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+
+        console.log('🌾 About Shonga Farms — rooted in quality since 2015');
+    })();
+</script>
+
+</body>
+</html>
