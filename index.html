@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MARYPAULINE ALLIED ENTERPRISE – Fish Farm in Shonga, Kwara</title>
+    <title>MARYPAULINE ALLIED ENTERPRISE – Fish & Poultry Farm in Shonga, Kwara</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Font Awesome 6 (free icons) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Google Fonts: Inter + Playfair Display -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 
     <style>
-        /* ========== ROOT VARIABLES ========== */
+        /* ========== ROOT VARIABLES (unchanged) ========== */
         :root {
             --green-dark: #1e4f2b;
             --green-primary: #2e7d32;
@@ -35,17 +35,9 @@
             --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
-        /* ========== RESET & BASE ========== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        /* ========== RESET & BASE (unchanged) ========== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--cream);
@@ -53,33 +45,10 @@
             line-height: 1.7;
             overflow-x: hidden;
         }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .section-padding {
-            padding: 90px 0;
-        }
-
+        h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 700; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; height: auto; display: block; }
+        .section-padding { padding: 90px 0; }
         .section-title {
             font-size: 2.6rem;
             font-weight: 700;
@@ -87,11 +56,7 @@
             margin-bottom: 0.5rem;
             letter-spacing: -0.5px;
         }
-
-        .section-title span {
-            color: var(--brown-primary);
-        }
-
+        .section-title span { color: var(--brown-primary); }
         .section-subtitle {
             font-size: 1.1rem;
             color: #5a5a5a;
@@ -99,7 +64,6 @@
             margin: 0 auto 2.5rem auto;
             font-weight: 400;
         }
-
         .divider-line {
             width: 70px;
             height: 4px;
@@ -120,7 +84,6 @@
             display: inline-block;
             letter-spacing: 0.3px;
         }
-
         .btn-primary-custom:hover {
             background: var(--green-dark);
             border-color: var(--green-dark);
@@ -128,7 +91,6 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 28px rgba(46, 125, 50, 0.30);
         }
-
         .btn-outline-custom {
             background: transparent;
             color: var(--green-primary);
@@ -141,14 +103,12 @@
             display: inline-block;
             letter-spacing: 0.3px;
         }
-
         .btn-outline-custom:hover {
             background: var(--green-primary);
             color: #fff;
             transform: translateY(-2px);
             box-shadow: 0 8px 28px rgba(46, 125, 50, 0.25);
         }
-
         .btn-brown {
             background: var(--brown-primary);
             color: #fff;
@@ -159,9 +119,7 @@
             border: 2px solid var(--brown-primary);
             transition: var(--transition);
             display: inline-block;
-            letter-spacing: 0.3px;
         }
-
         .btn-brown:hover {
             background: var(--brown-dark);
             border-color: var(--brown-dark);
@@ -170,7 +128,7 @@
             box-shadow: 0 8px 28px rgba(62, 39, 35, 0.30);
         }
 
-        /* ========== NAVBAR ========== */
+        /* ========== NAVBAR (unchanged) ========== */
         .navbar-custom {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
@@ -179,7 +137,6 @@
             transition: var(--transition);
             border-bottom: 1px solid rgba(46, 125, 50, 0.10);
         }
-
         .navbar-custom .navbar-brand {
             display: flex;
             align-items: center;
@@ -190,17 +147,12 @@
             color: var(--green-dark);
             letter-spacing: -0.5px;
         }
-
         .navbar-custom .navbar-brand img {
             height: 48px;
             width: auto;
             border-radius: 10px;
         }
-
-        .navbar-custom .navbar-brand span {
-            color: var(--brown-primary);
-        }
-
+        .navbar-custom .navbar-brand span { color: var(--brown-primary); }
         .navbar-custom .nav-link {
             font-weight: 500;
             color: #333;
@@ -210,13 +162,11 @@
             transition: var(--transition);
             position: relative;
         }
-
         .navbar-custom .nav-link:hover,
         .navbar-custom .nav-link.active {
             color: var(--green-primary);
             background: var(--green-pale);
         }
-
         .navbar-custom .nav-link::after {
             content: '';
             position: absolute;
@@ -229,22 +179,12 @@
             border-radius: 4px;
             transition: var(--transition);
         }
-
         .navbar-custom .nav-link:hover::after,
         .navbar-custom .nav-link.active::after {
             width: 60%;
         }
-
-        .navbar-toggler {
-            border: none;
-            padding: 6px 10px;
-            font-size: 1.3rem;
-            color: var(--green-dark);
-        }
-
-        .navbar-toggler:focus {
-            box-shadow: none;
-        }
+        .navbar-toggler { border: none; padding: 6px 10px; font-size: 1.3rem; color: var(--green-dark); }
+        .navbar-toggler:focus { box-shadow: none; }
 
         /* ========== HERO ========== */
         .hero {
@@ -253,12 +193,11 @@
             display: flex;
             align-items: center;
             background: linear-gradient(135deg, rgba(30, 79, 43, 0.82) 0%, rgba(62, 39, 35, 0.70) 100%),
-                url('static/background1.jfif') center/cover no-repeat;
+                url('static/background1.jfif') center/cover no-repeat;  /* You can change to a fish/poultry background */
             padding: 140px 0 100px 0;
             margin-top: 0;
             overflow: hidden;
         }
-
         .hero::before {
             content: '';
             position: absolute;
@@ -266,13 +205,11 @@
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 C300,80 600,20 1200,60 L1200,120 L0,120 Z" fill="%23f7f3e9" opacity="0.08"/></svg>') bottom/100% 80px no-repeat;
             pointer-events: none;
         }
-
         .hero-content {
             position: relative;
             z-index: 2;
             color: #fff;
         }
-
         .hero-content .badge-agri {
             display: inline-block;
             background: rgba(255, 255, 255, 0.18);
@@ -287,7 +224,6 @@
             border: 1px solid rgba(255, 255, 255, 0.20);
             margin-bottom: 1.2rem;
         }
-
         .hero-content h1 {
             font-size: 4.2rem;
             font-weight: 700;
@@ -295,11 +231,7 @@
             margin-bottom: 0.8rem;
             letter-spacing: -1px;
         }
-
-        .hero-content h1 span {
-            color: #b8e0a8;
-        }
-
+        .hero-content h1 span { color: #b8e0a8; }
         .hero-content p {
             font-size: 1.25rem;
             max-width: 560px;
@@ -308,13 +240,11 @@
             margin-bottom: 2.2rem;
             line-height: 1.8;
         }
-
         .hero-content .hero-buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
         }
-
         .hero-content .btn-hero-primary {
             background: #fff;
             color: var(--green-dark);
@@ -329,13 +259,11 @@
             gap: 10px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
         }
-
         .hero-content .btn-hero-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 14px 44px rgba(0, 0, 0, 0.25);
             background: #f5f5f5;
         }
-
         .hero-content .btn-hero-outline {
             background: transparent;
             color: #fff;
@@ -349,7 +277,6 @@
             align-items: center;
             gap: 10px;
         }
-
         .hero-content .btn-hero-outline:hover {
             background: rgba(255, 255, 255, 0.12);
             border-color: #fff;
@@ -365,12 +292,10 @@
             padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.15);
         }
-
         .hero-stats .stat-item {
             display: flex;
             flex-direction: column;
         }
-
         .hero-stats .stat-number {
             font-size: 2.2rem;
             font-weight: 700;
@@ -378,7 +303,6 @@
             color: #d4edc9;
             line-height: 1;
         }
-
         .hero-stats .stat-label {
             font-size: 0.9rem;
             opacity: 0.75;
@@ -390,47 +314,37 @@
         .about-preview {
             background: var(--white);
         }
-
         .about-preview .about-image-wrap {
             border-radius: var(--radius);
             overflow: hidden;
             box-shadow: var(--shadow-md);
             position: relative;
         }
-
         .about-preview .about-image-wrap img {
             width: 100%;
             height: 380px;
             object-fit: cover;
             transition: var(--transition);
         }
-
         .about-preview .about-image-wrap:hover img {
             transform: scale(1.02);
         }
-
         .about-preview .about-text h3 {
             font-size: 2rem;
             color: var(--green-dark);
             margin-bottom: 0.8rem;
         }
-
-        .about-preview .about-text h3 span {
-            color: var(--brown-primary);
-        }
-
+        .about-preview .about-text h3 span { color: var(--brown-primary); }
         .about-preview .about-text p {
             color: #444;
             font-size: 1.05rem;
         }
-
         .about-preview .about-features {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px 24px;
             margin-top: 1.2rem;
         }
-
         .about-preview .about-features li {
             list-style: none;
             display: flex;
@@ -439,7 +353,6 @@
             font-size: 0.98rem;
             color: #333;
         }
-
         .about-preview .about-features li i {
             color: var(--green-primary);
             font-size: 1.1rem;
@@ -449,7 +362,6 @@
         .services {
             background: var(--cream);
         }
-
         .service-card {
             background: var(--white);
             border-radius: var(--radius);
@@ -461,7 +373,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .service-card::before {
             content: '';
             position: absolute;
@@ -473,17 +384,12 @@
             opacity: 0;
             transition: var(--transition);
         }
-
         .service-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-hover);
             border-bottom-color: var(--brown-primary);
         }
-
-        .service-card:hover::before {
-            opacity: 1;
-        }
-
+        .service-card:hover::before { opacity: 1; }
         .service-card .service-icon {
             width: 70px;
             height: 70px;
@@ -497,13 +403,11 @@
             margin-bottom: 1.2rem;
             transition: var(--transition);
         }
-
         .service-card:hover .service-icon {
             background: var(--green-primary);
             color: #fff;
             transform: rotate(-6deg) scale(1.04);
         }
-
         .service-card h4 {
             font-family: 'Inter', sans-serif;
             font-weight: 700;
@@ -511,7 +415,6 @@
             color: var(--green-dark);
             margin-bottom: 0.5rem;
         }
-
         .service-card p {
             color: #555;
             font-size: 0.98rem;
@@ -522,19 +425,16 @@
         .ceo-section {
             background: var(--white);
         }
-
         .ceo-section .ceo-image-wrap {
             border-radius: var(--radius);
             overflow: hidden;
             box-shadow: var(--shadow-md);
         }
-
         .ceo-section .ceo-image-wrap img {
             width: 100%;
             height: 400px;
             object-fit: cover;
         }
-
         .ceo-section .ceo-quote {
             font-size: 1.35rem;
             font-style: italic;
@@ -543,7 +443,6 @@
             padding: 1rem 0 0.5rem 0;
             position: relative;
         }
-
         .ceo-section .ceo-quote::before {
             content: '\201C';
             font-size: 4rem;
@@ -553,14 +452,12 @@
             display: block;
             opacity: 0.3;
         }
-
         .ceo-section .ceo-name {
             font-weight: 700;
             color: var(--green-dark);
             font-size: 1.2rem;
             margin-top: 0.5rem;
         }
-
         .ceo-section .ceo-title {
             color: var(--brown-medium);
             font-weight: 500;
@@ -571,7 +468,6 @@
         .highlights {
             background: var(--cream);
         }
-
         .highlight-item {
             border-radius: var(--radius);
             overflow: hidden;
@@ -580,18 +476,13 @@
             transition: var(--transition);
             aspect-ratio: 1/1;
         }
-
         .highlight-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
-
-        .highlight-item:hover img {
-            transform: scale(1.06);
-        }
-
+        .highlight-item:hover img { transform: scale(1.06); }
         .highlight-item .highlight-overlay {
             position: absolute;
             bottom: 0;
@@ -604,19 +495,16 @@
             opacity: 0;
             transform: translateY(12px);
         }
-
         .highlight-item:hover .highlight-overlay {
             opacity: 1;
             transform: translateY(0);
         }
-
         .highlight-item .highlight-overlay h6 {
             font-family: 'Inter', sans-serif;
             font-weight: 600;
             font-size: 1rem;
             margin-bottom: 0;
         }
-
         .highlight-item .highlight-overlay small {
             opacity: 0.8;
             font-size: 0.85rem;
@@ -626,7 +514,6 @@
         .contact-preview {
             background: var(--white);
         }
-
         .contact-preview .contact-card {
             background: var(--cream);
             border-radius: var(--radius);
@@ -636,38 +523,30 @@
             height: 100%;
             border-left: 4px solid var(--green-primary);
         }
-
         .contact-preview .contact-card:hover {
             box-shadow: var(--shadow-md);
             transform: translateY(-4px);
         }
-
         .contact-preview .contact-card i {
             font-size: 2rem;
             color: var(--green-primary);
             margin-bottom: 0.8rem;
         }
-
         .contact-preview .contact-card h6 {
             font-family: 'Inter', sans-serif;
             font-weight: 600;
             color: var(--green-dark);
         }
-
         .contact-preview .contact-card p {
             color: #444;
             font-size: 0.95rem;
             margin-bottom: 0;
         }
-
         .contact-preview .contact-card a {
             color: var(--brown-primary);
             font-weight: 500;
         }
-
-        .contact-preview .contact-card a:hover {
-            color: var(--green-dark);
-        }
+        .contact-preview .contact-card a:hover { color: var(--green-dark); }
 
         /* ========== FOOTER ========== */
         .footer {
@@ -676,7 +555,6 @@
             padding: 50px 0 20px 0;
             border-top: 4px solid var(--brown-medium);
         }
-
         .footer h5 {
             font-family: 'Inter', sans-serif;
             font-weight: 700;
@@ -685,32 +563,27 @@
             font-size: 1.1rem;
             letter-spacing: 0.3px;
         }
-
         .footer .footer-brand {
             display: flex;
             align-items: center;
             gap: 12px;
             margin-bottom: 1rem;
         }
-
         .footer .footer-brand img {
             height: 44px;
             width: auto;
             border-radius: 10px;
         }
-
         .footer .footer-brand span {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             font-size: 1.5rem;
             color: #fff;
         }
-
         .footer p {
             font-size: 0.95rem;
             opacity: 0.8;
         }
-
         .footer .social-links a {
             display: inline-flex;
             align-items: center;
@@ -725,23 +598,17 @@
             margin-right: 8px;
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
-
         .footer .social-links a:hover {
             background: var(--green-light);
             color: var(--green-dark);
             transform: translateY(-3px);
             border-color: var(--green-light);
         }
-
         .footer .footer-links {
             list-style: none;
             padding: 0;
         }
-
-        .footer .footer-links li {
-            margin-bottom: 10px;
-        }
-
+        .footer .footer-links li { margin-bottom: 10px; }
         .footer .footer-links a {
             color: rgba(255, 255, 255, 0.75);
             font-size: 0.95rem;
@@ -750,12 +617,10 @@
             align-items: center;
             gap: 8px;
         }
-
         .footer .footer-links a:hover {
             color: #fff;
             transform: translateX(4px);
         }
-
         .footer .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.08);
             padding-top: 1.5rem;
@@ -765,124 +630,43 @@
             text-align: center;
         }
 
-        /* ========== RESPONSIVE ========== */
+        /* ========== RESPONSIVE (unchanged) ========== */
         @media (max-width: 991.98px) {
-            .hero-content h1 {
-                font-size: 3.2rem;
-            }
-
-            .hero-content p {
-                font-size: 1.1rem;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .about-preview .about-image-wrap img {
-                height: 280px;
-            }
-
-            .ceo-section .ceo-image-wrap img {
-                height: 300px;
-            }
-
-            .hero-stats {
-                gap: 20px 30px;
-            }
+            .hero-content h1 { font-size: 3.2rem; }
+            .hero-content p { font-size: 1.1rem; }
+            .section-title { font-size: 2.2rem; }
+            .about-preview .about-image-wrap img { height: 280px; }
+            .ceo-section .ceo-image-wrap img { height: 300px; }
+            .hero-stats { gap: 20px 30px; }
         }
-
         @media (max-width: 767.98px) {
-            .hero {
-                min-height: 80vh;
-                padding: 120px 0 70px 0;
-            }
-
-            .hero-content h1 {
-                font-size: 2.6rem;
-            }
-
-            .hero-content .hero-buttons {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .hero-content .hero-buttons .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .section-title {
-                font-size: 1.9rem;
-            }
-
-            .about-preview .about-features {
-                grid-template-columns: 1fr;
-                gap: 6px;
-            }
-
-            .hero-stats {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .highlight-item {
-                aspect-ratio: 4/3;
-            }
-
-            .navbar-custom .navbar-brand {
-                font-size: 1.3rem;
-            }
-
-            .navbar-custom .navbar-brand img {
-                height: 38px;
-            }
-
-            .contact-preview .contact-card {
-                padding: 1.5rem;
-            }
+            .hero { min-height: 80vh; padding: 120px 0 70px 0; }
+            .hero-content h1 { font-size: 2.6rem; }
+            .hero-content .hero-buttons { flex-direction: column; align-items: flex-start; }
+            .hero-content .hero-buttons .btn { width: 100%; justify-content: center; }
+            .section-title { font-size: 1.9rem; }
+            .about-preview .about-features { grid-template-columns: 1fr; gap: 6px; }
+            .hero-stats { flex-direction: column; gap: 12px; }
+            .highlight-item { aspect-ratio: 4/3; }
+            .navbar-custom .navbar-brand { font-size: 1.3rem; }
+            .navbar-custom .navbar-brand img { height: 38px; }
+            .contact-preview .contact-card { padding: 1.5rem; }
         }
-
         @media (max-width: 575.98px) {
-            .hero-content h1 {
-                font-size: 2.2rem;
-            }
-
-            .section-padding {
-                padding: 60px 0;
-            }
-
-            .service-card {
-                padding: 1.6rem 1.2rem;
-            }
-
-            .ceo-section .ceo-quote {
-                font-size: 1.1rem;
-            }
+            .hero-content h1 { font-size: 2.2rem; }
+            .section-padding { padding: 60px 0; }
+            .service-card { padding: 1.6rem 1.2rem; }
+            .ceo-section .ceo-quote { font-size: 1.1rem; }
         }
 
         /* ========== UTILITY ========== */
-        .text-green {
-            color: var(--green-primary);
-        }
-        .text-brown {
-            color: var(--brown-primary);
-        }
-        .bg-cream {
-            background-color: var(--cream);
-        }
-        .bg-green-dark {
-            background-color: var(--green-dark);
-        }
-        .rounded-custom {
-            border-radius: var(--radius);
-        }
-        .shadow-custom {
-            box-shadow: var(--shadow-sm);
-        }
-        .shadow-custom-hover:hover {
-            box-shadow: var(--shadow-hover);
-        }
+        .text-green { color: var(--green-primary); }
+        .text-brown { color: var(--brown-primary); }
+        .bg-cream { background-color: var(--cream); }
+        .bg-green-dark { background-color: var(--green-dark); }
+        .rounded-custom { border-radius: var(--radius); }
+        .shadow-custom { box-shadow: var(--shadow-sm); }
+        .shadow-custom-hover:hover { box-shadow: var(--shadow-hover); }
     </style>
 </head>
 
@@ -894,7 +678,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="static/images/logo1 (2).png" alt="Shonga Farms Logo" />
+                <img src="static/images/logo1 (2).png" alt="MaryPauline Allied Enterprise Logo" />
                 MARYPAULINE <span>ALLIED ENTERPRISE</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
@@ -925,16 +709,16 @@
         <div class="row align-items-center">
             <div class="col-lg-8 hero-content">
                 <div class="badge-agri">
-                    <i class="fas fa-seedling me-2"></i> Since 2015
+                    <i class="fas fa-fish me-2"></i> Since 2015
                 </div>
                 <h1>
-                    Growing <span>Quality</span> <br />
-                    for a <span>Better</span> Tomorrow
+                    Premium <span>Fish</span> &amp; <span>Poultry</span><br />
+                    for a Healthier Tomorrow
                 </h1>
                 <p>
-                    MARYPAULINE ALLIED ENTERPRISE is a poultry farm in Shonga, Kwara State,
-                    dedicated to sustainable Egg production, breed chicken, and
-                    other poultry products — eggs, milk, and more.
+                    MARYPAULINE ALLIED ENTERPRISE is a leading fish and poultry farm in Shonga, Kwara State,
+                    dedicated to sustainable fish farming, egg production, and breeding of quality chickens
+                    and other poultry products.
                 </p>
                 <div class="hero-buttons">
                     <a href="#about" class="btn-hero-primary">
@@ -973,7 +757,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <div class="about-image-wrap">
-                    <img src="static/images/Crop farmers_.jfif" alt="Shonga Farms crop production" />
+                    <!-- Replace with your fish/poultry farm image -->
+                    <img src="static/images/fish-farm.jfif" alt="Fish farming at MaryPauline Allied Enterprise" />
                 </div>
             </div>
             <div class="col-lg-6 about-text">
@@ -985,20 +770,19 @@
                 </h3>
                 <div class="divider-line" style="margin-left:0;margin-right:0;"></div>
                 <p>
-                    Founded in <strong>2015</strong> by <strong>MARYPAULINE</strong>,
-                    MARYPAULINE ALLIED ENTERPRISE has grown into a trusted name in agriculture
-                    across Kwara State and beyond. We combine traditional farming
-                    wisdom with modern techniques to deliver
-                    livestock, and animal products.
+                    Founded in <strong>2015</strong> by <strong>MaryPauline</strong>,
+                    MARYPAULINE ALLIED ENTERPRISE has grown into a trusted name in aquaculture and poultry
+                    across Kwara State and beyond. We combine traditional farming wisdom with modern techniques
+                    to deliver the finest fish, eggs, and poultry products.
                 </p>
                 <p>
-                    From our lush fields in <strong>Shonga</strong> to your table,
+                    From our fish ponds and chicken coops in <strong>Shonga</strong> to your table,
                     we are committed to quality, sustainability, and community.
                 </p>
                 <ul class="about-features">
-                    <li><i class="fas fa-check-circle"></i> 100% Natural Produce</li>
-                    <li><i class="fas fa-check-circle"></i> Ethically Reared Livestock</li>
-                    <li><i class="fas fa-check-circle"></i> Fresh Eggs &amp; Milk Daily</li>
+                    <li><i class="fas fa-check-circle"></i> 100% Natural Products</li>
+                    <li><i class="fas fa-check-circle"></i> Ethically Reared Poultry</li>
+                    <li><i class="fas fa-check-circle"></i> Fresh Eggs &amp; Fish Daily</li>
                     <li><i class="fas fa-check-circle"></i> Supporting Local Farmers</li>
                 </ul>
                 <a href="about.html" class="btn-primary-custom mt-3">
@@ -1021,48 +805,50 @@
             <h2 class="section-title">Our <span>Services</span></h2>
             <div class="divider-line"></div>
             <p class="section-subtitle">
-                We offer a complete range of agricultural services — from farm to fork.
+                We offer a complete range of fish and poultry services — from farm to fork.
             </p>
         </div>
 
         <div class="row g-4">
-            <!-- Crop Production -->
+            <!-- Fish Farming -->
             <div class="col-md-4">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-seedling"></i>
+                        <i class="fas fa-fish"></i>
                     </div>
-                    <h4>Empowering Farmers</h4>
+                    <h4>Fish Farming</h4>
                     <p>
-                        Poultry farming helps improve farmers' livelihoods,creates employment
-                        and contributes to food security.
+                        We raise high-quality fish species using sustainable pond systems.
+                        Our fish are fed with natural feed and raised in optimal conditions
+                        for maximum health and flavour.
                     </p>
                 </div>
             </div>
-            <!-- Livestock Rearing -->
+            <!-- Poultry Rearing -->
             <div class="col-md-4">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-cow"></i>
+                        <i class="fas fa-drumstick-bite"></i>
                     </div>
-                    <h4>Livestock Rearing</h4>
+                    <h4>Poultry Rearing</h4>
                     <p>
-                        Healthy, ethically raised poultry.
-                        Our livestock are free-range and raised with the utmost
-                        welfare standards.
+                        We breed healthy, free-range chickens and other poultry.
+                        Our birds are raised ethically, with the utmost care and welfare
+                        standards, ensuring premium meat and eggs.
                     </p>
                 </div>
             </div>
-            <!-- Animal Products -->
+            <!-- Egg & Poultry Products -->
             <div class="col-md-4">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-egg"></i>
                     </div>
-                    <h4>Animal Products</h4>
+                    <h4>Egg &amp; Poultry Products</h4>
                     <p>
-                        Fresh eggs, rich milk, and other premium products sourced
-                        daily from our farm. Pure, natural, and nutritious.
+                        Fresh eggs, chicken meat, and other poultry products sourced
+                        daily from our farm. Pure, natural, and nutritious — ideal for
+                        families and businesses.
                     </p>
                 </div>
             </div>
@@ -1084,7 +870,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-5">
                 <div class="ceo-image-wrap">
-                    <img src="static/images/ceo1.jfif" alt="James Audu – CEO MARYPAULINE ALLIED ENTERPRISE" />
+                    <!-- Replace with MaryPauline's photo -->
+                    <img src="static/images/ceo1.jfif" alt="MaryPauline – CEO MARYPAULINE ALLIED ENTERPRISE" />
                 </div>
             </div>
             <div class="col-lg-7">
@@ -1098,10 +885,10 @@
                 <div class="ceo-quote">
                     "At MARYPAULINE ALLIED ENTERPRISE, we believe that good food starts with good farming.
                     Our mission is to nourish our community with wholesome, sustainably
-                    grown products while empowering local farmers and respecting the land
+                    grown fish and poultry products while empowering local farmers and respecting the land
                     that sustains us all."
                 </div>
-                <div class="ceo-name">MARYPAULINE</div>
+                <div class="ceo-name">MaryPauline</div>
                 <div class="ceo-title">Founder &amp; CEO, MARYPAULINE ALLIED ENTERPRISE</div>
                 <div class="mt-3 d-flex flex-wrap gap-3">
                     <div><i class="fas fa-calendar-alt text-green me-1"></i> Founded 2015</div>
@@ -1124,77 +911,85 @@
             <h2 class="section-title">A Glimpse of <span>Our Farm</span></h2>
             <div class="divider-line"></div>
             <p class="section-subtitle">
-                From lush fields to happy livestock — see what makes Shonga Farms special.
+                From our fish ponds to our chicken coops — see what makes our farm special.
             </p>
         </div>
 
         <div class="row g-3">
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/veggies.jfif" alt="Fresh vegetables" />
+                    <!-- Replace with fish pond image -->
+                    <img src="static/images/fish-pond.jfif" alt="Fish pond" />
                     <div class="highlight-overlay">
-                        <h6>Fresh Vegetables</h6>
-                        <small>Organic &amp; nutritious</small>
+                        <h6>Fish Ponds</h6>
+                        <small>Healthy, thriving fish</small>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/chicks.jfif" alt="Poultry" />
+                    <!-- Replace with chicken coop image -->
+                    <img src="static/images/chicken-coop.jfif" alt="Chicken coop" />
                     <div class="highlight-overlay">
-                        <h6>Poultry Rearing</h6>
-                        <small>Healthy free-range birds</small>
+                        <h6>Chicken Coop</h6>
+                        <small>Free-range poultry</small>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/goats.jfif" alt="Goats" />
-                    <div class="highlight-overlay">
-                        <h6>Goat Rearing</h6>
-                        <small>Ethically raised</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="highlight-item">
+                    <!-- Replace with eggs image -->
                     <img src="static/images/eggs.jfif" alt="Fresh eggs" />
                     <div class="highlight-overlay">
                         <h6>Fresh Eggs</h6>
-                        <small>From our farm daily</small>
+                        <small>Collected daily</small>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/fowl.jfif" alt="Fowl" />
+                    <!-- Replace with poultry birds image -->
+                    <img src="static/images/fowl.jfif" alt="Poultry birds" />
                     <div class="highlight-overlay">
-                        <h6>Quality Fowl</h6>
-                        <small>Premium poultry</small>
+                        <h6>Quality Poultry</h6>
+                        <small>Healthy, well-bred birds</small>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/farmers.jfif" alt="Farmers at work" />
+                    <!-- Replace with fish harvest image -->
+                    <img src="static/images/fish-harvest.jfif" alt="Fish harvest" />
+                    <div class="highlight-overlay">
+                        <h6>Fish Harvest</h6>
+                        <small>Fresh from our ponds</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="highlight-item">
+                    <!-- Replace with team/workers image -->
+                    <img src="static/images/farmers.jfif" alt="Our team" />
                     <div class="highlight-overlay">
                         <h6>Our Team</h6>
-                        <small>Dedicated farmers</small>
+                        <small>Dedicated workers</small>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/worker.jfif" alt="Farm worker" />
+                    <!-- Replace with feeding image -->
+                    <img src="static/images/worker.jfif" alt="Feeding time" />
                     <div class="highlight-overlay">
-                        <h6>Hard at Work</h6>
-                        <small>Passion for farming</small>
+                        <h6>Feeding Time</h6>
+                        <small>Caring for our livestock</small>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
                 <div class="highlight-item">
-                    <img src="static/images/cooperation.jfif" alt="Community cooperation" />
+                    <!-- Replace with community/cooperation image -->
+                    <img src="static/images/cooperation.jfif" alt="Community" />
                     <div class="highlight-overlay">
                         <h6>Community</h6>
                         <small>Growing together</small>
@@ -1234,7 +1029,7 @@
                 <div class="contact-card">
                     <i class="fas fa-phone-alt"></i>
                     <h6>Phone</h6>
-                    <p><a href="tel:08030759675">0803 0759 675</a></p>
+                    <p><a href="tel:08030759675">0803 075 9675</a></p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -1269,12 +1064,12 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="footer-brand">
-                    <img src="static/images/logo1 (2).png" alt="Shonga Farms" />
+                    <img src="static/images/logo1 (2).png" alt="MaryPauline Allied Enterprise" />
                     <span>MARYPAULINE <span style="color:#a5d6a7;">ALLIED ENTERPRISE</span></span>
                 </div>
                 <p>
-                    MARYPAULINE ALLIED ENTERPRISE is a mixed farm in Shonga, Kwara State,
-                    offering premium crops, livestock, and fresh animal products
+                    MARYPAULINE ALLIED ENTERPRISE is a fish and poultry farm in Shonga, Kwara State,
+                    offering premium fish, eggs, chicken, and other poultry products
                     since 2015.
                 </p>
                 <div class="social-links">
@@ -1307,7 +1102,7 @@
             <div class="col-lg-3 col-md-4">
                 <h5>Social Handles</h5>
                 <ul class="footer-links">
-                    <li><i class="fab fa-tiktok me-2" style="color:#a5d6a7;"></i> @MaryPauline Farms</li>
+                    <li><i class="fab fa-tiktok me-2" style="color:#a5d6a7;"></i> @MaryPaulineFarms</li>
                     <li><i class="fab fa-whatsapp me-2" style="color:#a5d6a7;"></i> 08030759675</li>
                     <li><i class="fab fa-facebook-f me-2" style="color:#a5d6a7;"></i> MaryPauline Allied Enterprise</li>
                     <li><i class="fab fa-youtube me-2" style="color:#a5d6a7;"></i> MaryPauline Farms</li>
@@ -1329,7 +1124,7 @@
 </script>
 
 <!-- ============================================================ -->
-<!-- CUSTOM JAVASCRIPT -->
+<!-- CUSTOM JAVASCRIPT (unchanged) -->
 <!-- ============================================================ -->
 <script>
     (function() {
@@ -1342,13 +1137,12 @@
             statNumbers.forEach(el => {
                 const target = parseInt(el.getAttribute('data-count'), 10);
                 if (isNaN(target)) return;
-                const duration = 1600; // ms
+                const duration = 1600;
                 const startTime = performance.now();
 
                 function updateCounter(currentTime) {
                     const elapsed = currentTime - startTime;
                     const progress = Math.min(elapsed / duration, 1);
-                    // easeOutQuad
                     const eased = 1 - (1 - progress) * (1 - progress);
                     const current = Math.floor(eased * target);
                     el.textContent = current.toLocaleString();
@@ -1362,10 +1156,8 @@
             });
         }
 
-        // Intersection Observer for stats
         const heroStats = document.querySelector('.hero-stats');
         let statsAnimated = false;
-
         if (heroStats) {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1452,7 +1244,7 @@
             }
         });
 
-        console.log('🌾 Shonga Farms LTD — Growing quality since 2015');
+        console.log('🐟 MARYPAULINE ALLIED ENTERPRISE — Premium fish & poultry since 2015');
     })();
 </script>
 

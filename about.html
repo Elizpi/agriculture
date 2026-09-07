@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 
     <style>
-        /* ===== SAME STYLES AS INDEX (keep consistency) ===== */
+        /* ========== SHARED STYLES (same as index) ========== */
         :root {
             --green-dark: #1e4f2b;
             --green-primary: #2e7d32;
@@ -35,7 +35,7 @@
             --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
-        * { margin:0; padding:0; box-sizing:border-box; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
             font-family: 'Inter', sans-serif;
@@ -44,7 +44,7 @@
             line-height: 1.7;
             overflow-x: hidden;
         }
-        h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 700; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; font-weight: 700; }
         a { text-decoration: none; color: inherit; transition: var(--transition); }
         img { max-width: 100%; height: auto; display: block; }
         .section-padding { padding: 90px 0; }
@@ -90,23 +90,6 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 28px rgba(46, 125, 50, 0.30);
         }
-        .btn-outline-custom {
-            background: transparent;
-            color: var(--green-primary);
-            padding: 12px 34px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            border: 2px solid var(--green-primary);
-            transition: var(--transition);
-            display: inline-block;
-        }
-        .btn-outline-custom:hover {
-            background: var(--green-primary);
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(46, 125, 50, 0.25);
-        }
         .btn-brown {
             background: var(--brown-primary);
             color: #fff;
@@ -125,13 +108,13 @@
             box-shadow: 0 8px 28px rgba(62, 39, 35, 0.30);
         }
 
-        /* ---- NAVBAR (copy from index) ---- */
+        /* ---- NAVBAR ---- */
         .navbar-custom {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
-            box-shadow: 0 2px 28px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 28px rgba(0, 0, 0, 0.06);
             padding: 10px 0;
-            border-bottom: 1px solid rgba(46,125,50,0.10);
+            border-bottom: 1px solid rgba(46, 125, 50, 0.10);
         }
         .navbar-custom .navbar-brand {
             display: flex;
@@ -188,8 +171,8 @@
             min-height: 50vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(30,79,43,0.85), rgba(62,39,35,0.75)),
-                url('static/background(3).jfif') center/cover no-repeat;
+            background: linear-gradient(135deg, rgba(30, 79, 43, 0.85), rgba(62, 39, 35, 0.75)),
+                url('static/images/fish-bg.jfif') center/cover no-repeat; /* Replace with your fish/poultry background */
             padding: 160px 0 80px;
             margin-top: 0;
         }
@@ -201,7 +184,7 @@
         }
         .page-hero h1 span { color: #b8e0a8; }
         .page-hero p {
-            color: rgba(255,255,255,0.85);
+            color: rgba(255, 255, 255, 0.85);
             font-size: 1.2rem;
             max-width: 560px;
         }
@@ -324,7 +307,7 @@
         /* ---- footer (same) ---- */
         .footer {
             background: var(--green-dark);
-            color: rgba(255,255,255,0.85);
+            color: rgba(255, 255, 255, 0.85);
             padding: 50px 0 20px 0;
             border-top: 4px solid var(--brown-medium);
         }
@@ -356,12 +339,12 @@
             width: 42px;
             height: 42px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             color: #fff;
             font-size: 1.1rem;
             transition: var(--transition);
             margin-right: 8px;
-            border: 1px solid rgba(255,255,255,0.06);
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
         .footer .social-links a:hover {
             background: var(--green-light);
@@ -375,7 +358,7 @@
         }
         .footer .footer-links li { margin-bottom: 10px; }
         .footer .footer-links a {
-            color: rgba(255,255,255,0.75);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 0.95rem;
             transition: var(--transition);
             display: inline-flex;
@@ -387,7 +370,7 @@
             transform: translateX(4px);
         }
         .footer .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.08);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
             padding-top: 1.5rem;
             margin-top: 2rem;
             font-size: 0.9rem;
@@ -395,7 +378,7 @@
             text-align: center;
         }
 
-        /* ---- responsive tweaks ---- */
+        /* ---- responsive ---- */
         @media (max-width: 991.98px) {
             .page-hero h1 { font-size: 2.8rem; }
             .section-title { font-size: 2.2rem; }
@@ -422,33 +405,33 @@
 </head>
 <body>
 
-<!-- ============================================================ -->
-<!-- NAVBAR -->
-<!-- ============================================================ -->
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="static/images/logo1 (2).png" alt="MARYPAULINE ALLIED ENTERPRISE" />
-            MARYPAULINE <span>ALLIED ENTERPRISE</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item ms-lg-2">
-                <a class="btn btn-primary-custom btn-sm" href="contact.html" style="padding:8px 24px;font-size:0.9rem;">
-                    <i class="fas fa-phone-alt me-1"></i> Get in Touch
-                </a>
-            </li>
-        </ul>
+    <!-- ============================================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="static/images/logo1 (2).png" alt="MaryPauline Allied Enterprise Logo" />
+                MARYPAULINE <span>ALLIED ENTERPRISE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-primary-custom btn-sm" href="contact.html" style="padding:8px 24px;font-size:0.9rem;">
+                        <i class="fas fa-phone-alt me-1"></i> Get in Touch
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
 <!-- ============================================================ -->
@@ -460,8 +443,8 @@
             <div class="col-lg-8">
                 <h1>Our <span>Story</span></h1>
                 <p>
-                    For over a decade, MARYPAULINE ALLIED ENTERPRISE has been rooted in rich
-                    Fish Farming in Kwara State, raising healthy poultry with a steady source of income in the community.
+                    For over a decade, MARYPAULINE ALLIED ENTERPRISE has been dedicated to
+                    sustainable fish farming and poultry production in Shonga, Kwara State.
                 </p>
                 <a href="#story" class="btn btn-primary-custom mt-3">
                     <i class="fas fa-arrow-down me-1"></i> Discover More
@@ -479,7 +462,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <div class="story-image-wrap">
-                    <img src="static/images/Crop farmers_.jfif" alt="Shonga Farms fields" />
+                    <!-- Replace with your fish/poultry farm image -->
+                    <img src="static/images/fish-farm.jfif" alt="Fish farming at MaryPauline Allied Enterprise" />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -491,19 +475,19 @@
                 </h2>
                 <div class="divider-line" style="margin-left:0;margin-right:0;"></div>
                 <p>
-                    MARYPAULINE ALLIED ENTERPRISE was born out of a passion for sustainable agriculture
-                    and a vision to create a farm that not only produces food but also
-                    nurtures the land and the people who work on it.
+                    MARYPAULINE ALLIED ENTERPRISE was born out of a passion for sustainable
+                    aquaculture and poultry farming. What started as a small family-run operation
+                    has grown into a thriving enterprise, integrating fish farming, chicken breeding,
+                    and the production of fresh eggs and poultry meat.
                 </p>
                 <p>
-                    What started as a small family-run operation has grown into a
-                    thriving poultry farm, livestock rearing,
-                    and the supply of fresh animal products like eggs and milk.
+                    We remain deeply connected to our roots in <strong>Shonga</strong>, serving
+                    local communities and beyond with wholesome, ethically produced fish and poultry
+                    products.
                 </p>
                 <p>
-                    Today, we remain deeply connected to our roots in <strong>Shonga</strong>,
-                    serving local communities and beyond with wholesome, ethically
-                    produced food.
+                    Our commitment to quality, sustainability, and community has made us a trusted
+                    name in Kwara State and beyond.
                 </p>
                 <a href="#mission" class="btn-brown mt-2">
                     Our Mission <i class="fas fa-arrow-right ms-1"></i>
@@ -534,10 +518,9 @@
                     <i class="fas fa-flag-checkered"></i>
                     <h4>Our Mission</h4>
                     <p>
-                        To produce high-quality livestock, and animal products
-                        using sustainable farming practices that protect the environment,
-                        support local economies, and nourish families with healthy,
-                        natural food.
+                        To produce high-quality fish and poultry products using sustainable farming
+                        practices that protect the environment, support local economies, and nourish
+                        families with healthy, natural food.
                     </p>
                 </div>
             </div>
@@ -546,9 +529,9 @@
                     <i class="fas fa-eye"></i>
                     <h4>Our Vision</h4>
                     <p>
-                        To be a leading model of integrated, sustainable agriculture in
-                        West Africa, inspiring a new generation of farmers and building
-                        a future where farming and nature thrive together.
+                        To be a leading model of sustainable aquaculture and poultry farming in
+                        West Africa, inspiring a new generation of farmers and building a future
+                        where farming and nature thrive together.
                     </p>
                 </div>
             </div>
@@ -576,23 +559,23 @@
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="year">2015</div>
-                        <p><strong>Foundation</strong> – MaryPauline establishes MARYPAULINE ALLIED ENTERPRISE on a small plot in Shonga, Kwara State, with a handful of livestock and a vision for sustainable farming.</p>
+                        <p><strong>Foundation</strong> – MaryPauline establishes the enterprise in Shonga, Kwara State, starting with a few fish ponds and a chicken coop.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="year">2017</div>
-                        <p><strong>Expansion</strong> – The farm expands to 50 acres, introducing crop production and building the first poultry houses for free-range chickens.</p>
+                        <p><strong>Expansion</strong> – The farm expands to 20 ponds and increases poultry capacity, introducing modern feeding and health management systems.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="year">2019</div>
-                        <p><strong>Diversification</strong> – Added goats and dairy cattle, launching fresh milk and egg production for local markets.</p>
+                        <p><strong>Diversification</strong> – Added egg production and began supplying fresh eggs and poultry meat to local markets.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="year">2022</div>
-                        <p><strong>Community Impact</strong> – Established a cooperative program, supporting over 30 smallholder farmers with training and resources.</p>
+                        <p><strong>Community Impact</strong> – Launched a training program for local youth, teaching sustainable fish and poultry farming techniques.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="year">2025</div>
-                        <p><strong>10th Anniversary</strong> – Celebrated a decade of growth, now operating on over 120 acres, with a full range of farm products and a loyal customer base.</p>
+                        <p><strong>10th Anniversary</strong> – Celebrated a decade of growth, now operating a fully integrated fish and poultry farm with a loyal customer base.</p>
                     </div>
                 </div>
             </div>
@@ -612,7 +595,7 @@
             <h2 class="section-title">Meet Our <span>Team</span></h2>
             <div class="divider-line"></div>
             <p class="section-subtitle">
-                Dedicated individuals who make MARYPAULINE ALLIED ENTERPRISE a success every day.
+                Dedicated individuals who make our farm a success every day.
             </p>
         </div>
 
@@ -620,25 +603,26 @@
             <!-- CEO -->
             <div class="col-md-3">
                 <div class="team-card">
-                    <img src="static/images/ceo1.jfif" alt="James Audu" />
+                    <!-- Replace with MaryPauline's photo -->
+                    <img src="static/images/ceo1.jfif" alt="MaryPauline" />
                     <div class="team-body">
                         <h5>MaryPauline</h5>
                         <div class="role">Founder &amp; CEO</div>
                         <p class="mt-2" style="font-size:0.9rem;color:#555;">
-                            Visionary leader with over 15 years of experience in agriculture.
+                            Visionary leader with over 15 years of experience in aquaculture and poultry.
                         </p>
                     </div>
                 </div>
             </div>
-            <!-- Farmer 1 -->
+            <!-- Farm Manager -->
             <div class="col-md-3">
                 <div class="team-card">
                     <img src="static/images/farmers.jfif" alt="Farm team" />
                     <div class="team-body">
-                        <h5>Our Farmers</h5>
-                        <div class="role">Crop &amp; Livestock Specialists</div>
+                        <h5>Our Farm Team</h5>
+                        <div class="role">Fish &amp; Poultry Specialists</div>
                         <p class="mt-2" style="font-size:0.9rem;color:#555;">
-                            A passionate team that tends to our fields and animals with care.
+                            Passionate workers who tend to our ponds and coops with care.
                         </p>
                     </div>
                 </div>
@@ -656,10 +640,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Cooperation -->
+            <!-- Community -->
             <div class="col-md-3">
                 <div class="team-card">
-                    <img src="static/images/cooperation.jfif" alt="Community cooperation" />
+                    <img src="static/images/cooperation.jfif" alt="Community" />
                     <div class="team-body">
                         <h5>Community Partners</h5>
                         <div class="role">Cooperative &amp; Outreach</div>
@@ -674,7 +658,7 @@
 </section>
 
 <!-- ============================================================ -->
-<!-- CALL TO ACTION (optional) -->
+<!-- CALL TO ACTION -->
 <!-- ============================================================ -->
 <section class="section-padding" style="background: var(--green-dark); color: #fff;">
     <div class="container text-center">
@@ -691,19 +675,19 @@
 </section>
 
 <!-- ============================================================ -->
-<!-- FOOTER (same as index) -->
+<!-- FOOTER -->
 <!-- ============================================================ -->
 <footer class="footer">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="footer-brand">
-                    <img src="static/images/logo1 (2).png" alt="Shonga Farms" />
+                    <img src="static/images/logo1 (2).png" alt="MaryPauline Allied Enterprise" />
                     <span>MARYPAULINE <span style="color:#a5d6a7;">ALLIED ENTERPRISE</span></span>
                 </div>
                 <p>
-                    MARYPAULINE ALLIED ENTERPRISE is a mixed farm in Shonga, Kwara State,
-                    offering premium crops, livestock, and fresh animal products
+                    MARYPAULINE ALLIED ENTERPRISE is a fish and poultry farm in Shonga, Kwara State,
+                    offering premium fish, eggs, chicken, and other poultry products
                     since 2015.
                 </p>
                 <div class="social-links">
@@ -736,7 +720,7 @@
             <div class="col-lg-3 col-md-4">
                 <h5>Social Handles</h5>
                 <ul class="footer-links">
-                    <li><i class="fab fa-tiktok me-2" style="color:#a5d6a7;"></i> @MaryPauline Farms</li>
+                    <li><i class="fab fa-tiktok me-2" style="color:#a5d6a7;"></i> @MaryPaulineFarms</li>
                     <li><i class="fab fa-whatsapp me-2" style="color:#a5d6a7;"></i> 08030759675</li>
                     <li><i class="fab fa-facebook-f me-2" style="color:#a5d6a7;"></i> MaryPauline Allied Enterprise</li>
                     <li><i class="fab fa-youtube me-2" style="color:#a5d6a7;"></i> MaryPauline Farms</li>
@@ -745,7 +729,7 @@
         </div>
 
         <div class="footer-bottom">
-            &copy; 2015 – 2026 <strong>MARYPAULINE ALLIED ENTERPRISE</strong>. All rights reserved.
+            &copy; 2015 – 2026 <strong>MaryPauline Allied Enterprise</strong>. All rights reserved.
             <span class="d-block d-md-inline"> | Powered with <i class="fas fa-heart" style="color:#ef9a9a;"></i> by Sidasoft Technologies</span>
         </div>
     </div>
@@ -758,7 +742,7 @@
 </script>
 
 <!-- ============================================================ -->
-<!-- CUSTOM JS (same as index, adapted) -->
+<!-- CUSTOM JS (same as index) -->
 <!-- ============================================================ -->
 <script>
     (function() {
@@ -817,7 +801,7 @@
             });
         }
 
-        // ---------- SET ACTIVE ON PAGE LOAD (based on URL) ----------
+        // ---------- SET ACTIVE ON PAGE LOAD ----------
         const currentPath = window.location.pathname.split('/').pop() || 'about.html';
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
@@ -828,7 +812,7 @@
             }
         });
 
-        console.log('🌾 About Shonga Farms — rooted in quality since 2015');
+        console.log('🐟 MARYPAULINE ALLIED ENTERPRISE — About page');
     })();
 </script>
 
