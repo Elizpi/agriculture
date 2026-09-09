@@ -162,6 +162,21 @@
             transition: var(--transition);
             position: relative;
         }
+        /* ===== NAVBAR BRAND RESPONSIVE ===== */
+@media (max-width: 576px) {
+  .navbar-custom .navbar-brand {
+    font-size: 1.0rem;  /* adjust as needed */
+    gap: 6px;
+  }
+  .navbar-custom .navbar-brand img {
+    height: 32px;       /* smaller logo on phones */
+  }
+}
+@media (max-width: 400px) {
+  .navbar-custom .navbar-brand {
+    font-size: 0.85rem;
+  }
+}
         .navbar-custom .nav-link:hover,
         .navbar-custom .nav-link.active {
             color: var(--green-primary);
